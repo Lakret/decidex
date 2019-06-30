@@ -19,11 +19,9 @@ The package can be installed by adding `decidex` to your list of dependencies in
 ```elixir
 def deps do
   [
-    {:decidex, "~> 0.0.1"}
+    {:decidex, "~> 0.0.2"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/decidex](https://hexdocs.pm/decidex).
+Docs are available [on Hex.pm](https://hexdocs.pm/decidex/0.0.2).

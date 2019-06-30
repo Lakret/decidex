@@ -1,7 +1,7 @@
 defmodule Decidex.MixProject do
   use Mix.Project
 
-  @version "0.0.1"
+  @version "0.0.2"
   @description "A small and simple decision tree learning library"
 
   def project do
@@ -13,7 +13,11 @@ defmodule Decidex.MixProject do
       deps: deps(),
       start_permanent: Mix.env() == :prod,
       package: package(),
-      name: "Decidex"
+      name: "Decidex",
+      docs: [
+        source_ref: "v#{@version}",
+        source_url: "https://github.com/Lakret/decidex"
+      ]
     ]
   end
 
@@ -27,6 +31,7 @@ defmodule Decidex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false}
     ]
   end
@@ -35,8 +40,7 @@ defmodule Decidex.MixProject do
     %{
       licenses: ["Apache 2"],
       maintainers: ["Dmitry Slutsky"],
-      links: %{"GitHub" => "https://github.com/Lakret/decidex"},
-      files: ["lib", "mix.exs", "README.md", "CHANGELOG.md", "src", ".formatter.exs"]
+      links: %{"GitHub" => "https://github.com/Lakret/decidex"}
     }
   end
 end
