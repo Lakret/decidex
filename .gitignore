@@ -25,3 +25,5 @@ decidex-*.tar
 # VS Code
 .elixir_ls
 
+# macOS
+.DS_Store
