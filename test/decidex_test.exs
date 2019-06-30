@@ -5,8 +5,8 @@ defmodule DecidexTest do
   doctest Decidex
 
   test "`predict` works" do
-    {feature_vector, actual_outcome} = hd(example_training_data())
-    expected_outcome = predict(example(), feature_vector)
+    {features, actual_outcome} = hd(example_training_data())
+    expected_outcome = predict(example(), features)
 
     assert actual_outcome == expected_outcome
   end
